@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem; }
+
+h1 {
+  font-size: 1.5rem; }
+
+a {
+  text-decoration: none; }
+
+#moving-block {
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden; }
+  #moving-block header #logo {
+    height: 10vh;
+    margin: 0.5rem 1rem; }
+@keyframes fadein {
+  from {
+    height: 0; }
+  to {
+    height: 80vh; } }
+  #moving-block header #dropdownBtn {
+    background-color: #ee1019;
+    border: 1px solid #ee1019;
+    margin: 0.5rem 1rem;
+    color: #fff; }
+  #moving-block header #rules {
+    display: none;
+    position: absolute;
+    opacity: 0.3;
+    top: 16vh;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    z-index: 3; }
+    #moving-block header #rules h1, #moving-block header #rules p {
+      margin-top: 1rem;
+      margin-left: 1.2rem; }
+    #moving-block header #rules #h1Cont {
+      border-bottom: 1px solid #eee; }
+    #moving-block header #rules p {
+      max-width: 80%; }
+  #moving-block main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #moving-block main #gamePlay {
+      border-radius: 2rem;
+      max-width: 800px;
+      width: 100%;
+      height: 80%;
+      margin-top: 1rem;
+      margin-bottom: 5rem;
+      background-image: linear-gradient(to left bottom, #051937, #12436a, #19729e, #1fa6d1, #33ddff); }
+    #moving-block main .playfield {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      border-radius: .2rem;
+      margin: 0 auto; }
+      #moving-block main .playfield .block {
+        position: absolute;
+        border-radius: 50%;
+        display: none; }
+      #moving-block main .playfield .block img {
+        width: 100%; }
+    #moving-block main .info {
+      color: #fff;
+      font-family: Lato;
+      border: 1px solid transparent;
+      border-radius: .2rem;
+      box-shadow: 0px 10px 5px 0px rgba(222, 217, 217, 0.5); }
+      #moving-block main .info h3 {
+        font-size: 1rem;
+        padding: .5rem;
+        text-align: center;
+        margin-bottom: .5rem; }
+      #moving-block main .info .lives .livesContainer {
+        display: flex;
+        justify-content: center; }
+        #moving-block main .info .lives .livesContainer .live {
+          height: 1.5rem;
+          width: 1.5rem;
+          margin: 0 .2rem; }
+          #moving-block main .info .lives .livesContainer .live img {
+            width: 100%; }
+  #moving-block #gameOver {
+    position: absolute;
+    top: 0;
+    left: -200vw;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to left bottom, #c21500, #ffc500);
+    color: #fff;
+    font-size: 3rem;
+    font-family: 'Faster One', cursive; }
+    #moving-block #gameOver h1 {
+      font-size: 3rem; }
+    #moving-block #gameOver figure {
+      height: 60%;
+      width: 80%; }
+    #moving-block #gameOver img {
+      width: 100%;
+      height: 100%; }
+    #moving-block #gameOver #playAgainBtn {
+      border: 1px solid #eee;
+      border-radius: 2rem;
+      transition: box-shadow 0.6s ease; }
+    #moving-block #gameOver a {
+      padding: 0.5rem;
+      margin: 0.5rem;
+      color: #fff;
+      font-size: 2rem; }
+    #moving-block #gameOver #playAgainBtn:hover {
+      box-shadow: -2px 1px 31px 9px rgba(224, 220, 220, 0.75); }
+    #moving-block #gameOver p {
+      font-size: 1rem;
+      font-family: Lato; }
+
+/*# sourceMappingURL=style.css.map */

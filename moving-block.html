@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- customised CSS -->
+    <link rel="stylesheet" href="resources/css/style.css">
+
+    <title>Tom and jerry moving game</title>
+</head>
+<body id="moving-block">
+<header class="">
+    <nav class="d-flex justify-content-between align-items-center bg-light">
+        <img id="logo" src="resources/img/tom&jerry.png" alt="Tom&Jerry">
+
+        <div id="cont"></div>
+
+    </nav>
+</header>
+<main>
+    <section id="gamePlay">
+
+        <section class="info d-flex align-items-center justify-content-around">
+            <div class="lives d-flex">
+                <h3>Lives:</h3>
+                <div class="livesContainer mt-1">
+                    <div class="live"><img src="resources/img/cheese.png" alt="live"></div>
+                    <div class="live"><img src="resources/img/cheese.png" alt="live"></div>
+                    <div class="live"><img src="resources/img/cheese.png" alt="live"></div>
+                </div>
+            </div>
+            <div class="timing d-flex align-items-center justify-content-center">
+                <h3>Playing time:</h3>
+                <div class="clockCtn">
+                    <div class="clock d-flex mt-2">
+                        <p class="hour">00</p>
+                        <span>:</span>
+                        <p class="minute">00</p>
+                        <span>:</span>
+                        <p class="second">00</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="playfield">
+            <div class="block tom"><img src="resources/img/tom.png" alt="tom"></div>
+            <div class="block tom"><img src="resources/img/tom.png" alt="tom"></div>
+            <div class="block tom"><img src="resources/img/tom.png" alt="tom"></div>
+            <div class="block tom"><img src="resources/img/tom.png" alt="tom"></div>
+            <div class="block jerry"><img src="resources/img/jerry.png" alt="tom"></div>
+        </section>
+        <section id="gameOver" class="d-flex flex-column  justify-content-center align-items-center">
+            <h1>Game Over!</h1>
+            <p class="text-center" id="endResult"></p>
+            <figure class="d-flex justify-content-center">
+                <img src="resources/img/catched.png">
+            </figure>
+            <div id="playAgainBtn" class=" d-flex justify-content-center align-items-center">
+                <a id="playAgain" href="#">Play Again?</a>
+            </div>
+
+
+        </section>
+    </section>
+</main>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- Customised JS -->
+<script src="resources/js/moving-block.js"></script>
+</body>
+</html>
