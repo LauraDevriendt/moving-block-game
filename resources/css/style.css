@@ -90,10 +90,11 @@ a {
     font-size: 3rem;
     font-family: 'Faster One', cursive; }
     #moving-block #gameOver h1 {
-      font-size: 3rem; }
+      font-size: 2rem; }
     #moving-block #gameOver figure {
       height: 60%;
-      width: 80%; }
+      width: 80%;
+      max-width: 500px; }
     #moving-block #gameOver img {
       width: 100%;
       height: 100%; }
@@ -105,7 +106,7 @@ a {
       padding: 0.5rem;
       margin: 0.5rem;
       color: #fff;
-      font-size: 2rem; }
+      font-size: 1.5rem; }
     #moving-block #gameOver #playAgainBtn:hover {
       box-shadow: -2px 1px 31px 9px rgba(224, 220, 220, 0.75); }
     #moving-block #gameOver p {

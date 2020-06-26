@@ -170,7 +170,7 @@ const moveEnemies = () => {
                 let hours = document.querySelector('.hours').innerHTML
 
                 document.getElementById('endResult').innerText = `You stayed a live for ${hours} hours, ${minutes} minutes and ${seconds} seconds`
-                document.getElementById('gameOver').style.cssText = "left:-200vw";
+                document.getElementById('gameOver').style.cssText = "left:0";
                 document.getElementById('playAgain').addEventListener('click', function () {
                     location.reload();
                 })
