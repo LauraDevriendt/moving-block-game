@@ -2,56 +2,14 @@
 
   width: 100%;
   height: 100vh;
-  overflow-y: hidden;
+
 
   header {
     #logo {
       height: 10vh;
       margin: 0.5rem 1rem;
     }
-
-
-
-    @keyframes fadein {
-      from {
-        height: 0;
-      }
-      to {
-        height: 80vh;
-      }
-    }
-
-    #dropdownBtn {
-      background-color: rgb(238, 16, 25);
-      border: 1px solid rgb(238, 16, 25);
-     margin: 0.5rem 1rem;
-      color: #fff;
-    }
-
-    #rules{
-      display: none;
-      position: absolute;
-      opacity: 0.3;
-      top: 16vh;
-      left: 0;
-      width: 100%;
-      height: 80%;
-      z-index: 3;
-      h1,p{
-        margin-top: 1rem;
-        margin-left: 1.2rem;
-      }
-
-      #h1Cont{
-        border-bottom: 1px solid #eee;
-      }
-
-      p{
-       max-width: 80%;
-      }
-    }
   }
-
 
   main {
     width: 100%;
@@ -72,22 +30,33 @@
 
     .playfield {
       width: 100%;
-      height: 100%;
+     height: 90%;
       position: relative;
-      border-radius: .2rem;
+      border-radius: 2rem;
 
 
       margin: 0 auto;
 
-      .block {
+      .tom {
         position: absolute;
-        border-radius: 50%;
-        display: none;
-
+        width: 100px;
+        height: 100px;
+        display: block;
+        left: 0px;
+        top: 0px;
       }
 
       .block img {
         width: 100%;
+      }
+
+      .jerry{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        display: block;
+        left: 0px;
+        top: 0px;
       }
     }
 
